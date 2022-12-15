@@ -6,3 +6,6 @@
 6. @GrpcService so we can hit the service, is annotations from grpc starter
 7. onNext used to set the response
 8. onCompleted used to close the connection
+
+
+![img.png](img.png)
