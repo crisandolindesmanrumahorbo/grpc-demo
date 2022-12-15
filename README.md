@@ -9,3 +9,7 @@
 
 
 ![img.png](img.png)
+
+https://yidongnan.github.io/grpc-spring-boot-starter/en/
+https://grpc.io/docs/languages/java/basics/
+https://www.imaginarycloud.com/blog/grpc-vs-rest/
