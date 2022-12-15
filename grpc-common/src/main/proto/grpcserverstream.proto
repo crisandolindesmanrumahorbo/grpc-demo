@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package com.rumahorbo.grpserverstream;
+
+option java_multiple_files = true;
+option java_package = "com.rumahorbo.grpserverstream";
+
+service SpellService {
+  rpc spell(WordRequest) returns (stream WordResponse) {
+
+  }
+}
+
+message WordRequest {
+  string word = 1;
+}
+
+message WordResponse {
+  string word = 1;
+}

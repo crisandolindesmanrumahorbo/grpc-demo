@@ -4,63 +4,60 @@
 package com.rumahorbo.grpcunary;
 
 public final class Grpc {
-    static final com.google.protobuf.Descriptors.Descriptor
-            internal_static_com_rumahorbo_grpcunary_HelloRequest_descriptor;
-    static final
+  private Grpc() {}
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
+
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
+  }
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_rumahorbo_grpcunary_HelloRequest_descriptor;
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internal_static_com_rumahorbo_grpcunary_HelloRequest_fieldAccessorTable;
-    static final com.google.protobuf.Descriptors.Descriptor
-            internal_static_com_rumahorbo_grpcunary_HelloResponse_descriptor;
-    static final
+      internal_static_com_rumahorbo_grpcunary_HelloRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_rumahorbo_grpcunary_HelloResponse_descriptor;
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internal_static_com_rumahorbo_grpcunary_HelloResponse_fieldAccessorTable;
-    private static com.google.protobuf.Descriptors.FileDescriptor
-            descriptor;
+      internal_static_com_rumahorbo_grpcunary_HelloResponse_fieldAccessorTable;
 
-    static {
-        java.lang.String[] descriptorData = {
-                "\n\ngrpc.proto\022\027com.rumahorbo.grpcunary\"\034\n" +
-                        "\014HelloRequest\022\014\n\004name\030\001 \001(\t\"\035\n\rHelloResp" +
-                        "onse\022\014\n\004name\030\001 \001(\t2h\n\014HelloService\022X\n\005he" +
-                        "llo\022%.com.rumahorbo.grpcunary.HelloReque" +
-                        "st\032&.com.rumahorbo.grpcunary.HelloRespon" +
-                        "se\"\000B\033\n\027com.rumahorbo.grpcunaryP\001b\006proto" +
-                        "3"
-        };
-        descriptor = com.google.protobuf.Descriptors.FileDescriptor
-                .internalBuildGeneratedFileFrom(descriptorData,
-                        new com.google.protobuf.Descriptors.FileDescriptor[]{
-                        });
-        internal_static_com_rumahorbo_grpcunary_HelloRequest_descriptor =
-                getDescriptor().getMessageTypes().get(0);
-        internal_static_com_rumahorbo_grpcunary_HelloRequest_fieldAccessorTable = new
-                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-                internal_static_com_rumahorbo_grpcunary_HelloRequest_descriptor,
-                new java.lang.String[]{"Name",});
-        internal_static_com_rumahorbo_grpcunary_HelloResponse_descriptor =
-                getDescriptor().getMessageTypes().get(1);
-        internal_static_com_rumahorbo_grpcunary_HelloResponse_fieldAccessorTable = new
-                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-                internal_static_com_rumahorbo_grpcunary_HelloResponse_descriptor,
-                new java.lang.String[]{"Name",});
-    }
-    private Grpc() {
-    }
+  public static com.google.protobuf.Descriptors.FileDescriptor
+      getDescriptor() {
+    return descriptor;
+  }
+  private static  com.google.protobuf.Descriptors.FileDescriptor
+      descriptor;
+  static {
+    java.lang.String[] descriptorData = {
+      "\n\ngrpc.proto\022\027com.rumahorbo.grpcunary\"\034\n" +
+      "\014HelloRequest\022\014\n\004name\030\001 \001(\t\"\035\n\rHelloResp" +
+      "onse\022\014\n\004name\030\001 \001(\t2h\n\014HelloService\022X\n\005he" +
+      "llo\022%.com.rumahorbo.grpcunary.HelloReque" +
+      "st\032&.com.rumahorbo.grpcunary.HelloRespon" +
+      "se\"\000B\033\n\027com.rumahorbo.grpcunaryP\001b\006proto" +
+      "3"
+    };
+    descriptor = com.google.protobuf.Descriptors.FileDescriptor
+      .internalBuildGeneratedFileFrom(descriptorData,
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+        });
+    internal_static_com_rumahorbo_grpcunary_HelloRequest_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_com_rumahorbo_grpcunary_HelloRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_rumahorbo_grpcunary_HelloRequest_descriptor,
+        new java.lang.String[] { "Name", });
+    internal_static_com_rumahorbo_grpcunary_HelloResponse_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_com_rumahorbo_grpcunary_HelloResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_rumahorbo_grpcunary_HelloResponse_descriptor,
+        new java.lang.String[] { "Name", });
+  }
 
-    public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistryLite registry) {
-    }
-
-    public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistry registry) {
-        registerAllExtensions(
-                (com.google.protobuf.ExtensionRegistryLite) registry);
-    }
-
-    public static com.google.protobuf.Descriptors.FileDescriptor
-    getDescriptor() {
-        return descriptor;
-    }
-
-    // @@protoc_insertion_point(outer_class_scope)
+  // @@protoc_insertion_point(outer_class_scope)
 }
